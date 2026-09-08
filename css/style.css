@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contenedor-principal {
+    max-width: 1000px;
+    margin: 30px auto 0 auto;
+    padding: 0 20px;
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+.header-principal {
+    background-color: #1a2b48;
+    color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.logo-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+.hotel-titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.navegacion-principal ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navegacion-principal a {
+    color: #d1dbe8;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navegacion-principal a:hover,
+.navegacion-principal a.activo {
+    color: #ffffff;
+    border-bottom: 2px solid #5b82c2;
+    padding-bottom: 4px;
+}
+
+.boton-login-nav {
+    background-color: #5b82c2;
+    color: #ffffff !important;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border-bottom: none !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.boton-login-nav:hover {
+    background-color: #4a72b2;
+}
+
+.seccion-bienvenida {
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 20px 10px;
+}
+
+.seccion-bienvenida h2 {
+    color: #1a2b48;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.seccion-bienvenida p {
+    color: #666666;
+    font-size: 1.1rem;
+}
+
+.seccion-sede {
+    margin-bottom: 30px;
+}
+
+.tarjeta-sede {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e1e8f0;
+}
+
+.tarjeta-sede img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta-sede .info {
+    padding: 25px 30px;
+}
+
+.tarjeta-sede h3 {
+    color: #1a2b48;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.tarjeta-sede p {
+    color: #555555;
+}
+
+.tarjeta-oscura {
+    background-color: #233a5e;
+    color: #ffffff;
+    padding: 35px 40px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.subtitulo-seccion {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #8da9cb;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.titulo-seccion {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.seccion-login {
+    max-width: 550px;
+    margin: 40px auto;
+}
+
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.grupo-campo label {
+    font-size: 0.9rem;
+    color: #d8e2ee;
+    font-weight: 600;
+}
+
+.grupo-campo input {
+    padding: 12px 15px;
+    border-radius: 6px;
+    border: 1px solid #3d5880;
+    background-color: #1a2b48;
+    color: #ffffff;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.grupo-campo input:focus {
+    border-color: #8da9cb;
+}
+
+.acciones-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn-iniciar {
+    background-color: #5b82c2;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-iniciar:hover {
+    background-color: #4a72b2;
+}
+
+.enlace-olvido {
+    color: #8da9cb;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.enlace-olvido:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.lista-servicios-estilizada {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-servicios-estilizada li {
+    display: flex;
+    align-items: flex-start;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    color: #d8e2ee;
+    font-size: 0.98rem;
+    line-height: 1.5;
+}
+
+.lista-servicios-estilizada li:last-child {
+    border-bottom: none;
+}
+
+.lista-servicios-estilizada strong {
+    color: #ffffff;
+}
+
+.descripcion-ubicacion {
+    color: #d8e2ee;
+    margin-bottom: 15px;
+}
+
+.mapa-contenedor {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hotel-nombre {
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.hotel-direccion {
+    color: #d8e2ee;
+    margin-bottom: 15px;
+}
+
+.divisor {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    margin: 15px 0;
+}
+
+.metodo-transporte {
+    padding: 5px 0;
+}
+
+.titulo-transporte {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.metodo-transporte p {
+    color: #d8e2ee;
+    font-size: 0.95rem;
+}
+
+.pie-pagina {
+    background-color: #1a2b48;
+    color: #8da9cb;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: auto;
+    font-size: 0.9rem;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.pie-pagina p {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .header-principal {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .navegacion-principal ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tarjeta-oscura {
+        padding: 25px 20px;
+    }
+
+    .acciones-login {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

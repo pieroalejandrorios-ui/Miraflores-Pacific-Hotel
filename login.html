@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Miraflores Pacific Hotel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header-principal">
+        <div class="logo-contenedor">
+            <img src="img/logo.jpg" alt="Logo de Miraflores Pacific Hotel" class="logo-img">
+            <h1 class="hotel-titulo">Miraflores Pacific Hotel</h1>
+        </div>
+        <nav class="navegacion-principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html" class="boton-login-nav activo">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+
+        <section class="tarjeta-oscura seccion-login">
+            <h2 class="titulo-seccion">Iniciar Sesión</h2>
+            <form class="formulario-login" action="#" method="POST">
+                <div class="grupo-campo">
+                    <label for="usuario">Correo Electrónico o Nombre de Usuario</label>
+                    <input 
+                        type="text" 
+                        id="usuario" 
+                        name="usuario" 
+                        placeholder="Ingrese su correo electrónico o usuario" 
+                        required
+                        oninvalid="this.setCustomValidity('Por favor, complete este campo.')"
+                        oninput="this.setCustomValidity('')">
+                </div>
+                <div class="grupo-campo">
+                    <label for="clave">Contraseña</label>
+                    <input 
+                        type="password" 
+                        id="clave" 
+                        name="clave" 
+                        placeholder="Ingrese su contraseña" 
+                        required
+                        oninvalid="this.setCustomValidity('Por favor, ingrese su contraseña.')"
+                        oninput="this.setCustomValidity('')">
+                </div>
+                <div class="acciones-login">
+                    <button type="submit" class="btn-iniciar">Ingresar</button>
+                    <a href="#" class="enlace-olvido">¿Olvidó su contraseña?</a>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="info-footer">
+            <p>&copy; 2026 Miraflores Pacific Hotel. Todos los derechos reservados.</p>
+            <p>Miraflores, Lima - Perú</p>
+        </div>
+    </footer>
+
+</body>
+</html>
