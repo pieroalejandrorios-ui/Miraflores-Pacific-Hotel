@@ -170,7 +170,8 @@ body {
     margin: 40px auto;
 }
 
-.formulario-login {
+.formulario-login,
+.formulario-soporte {
     display: flex;
     flex-direction: column;
     gap: 18px;
@@ -189,7 +190,9 @@ body {
     font-weight: 600;
 }
 
-.grupo-campo input {
+.grupo-campo input,
+.grupo-campo select,
+.grupo-campo textarea {
     padding: 12px 15px;
     border-radius: 6px;
     border: 1px solid #3d5880;
@@ -198,10 +201,19 @@ body {
     font-size: 0.95rem;
     outline: none;
     transition: border-color 0.3s ease;
+    width: 100%;
+    font-family: inherit;
 }
 
-.grupo-campo input:focus {
+.grupo-campo input:focus,
+.grupo-campo select:focus,
+.grupo-campo textarea:focus {
     border-color: #8da9cb;
+}
+
+.grupo-campo select option {
+    background-color: #1a2b48;
+    color: #ffffff;
 }
 
 .acciones-login {
@@ -212,7 +224,8 @@ body {
     margin-top: 10px;
 }
 
-.btn-iniciar {
+.btn-iniciar,
+.btn-enviar-soporte {
     background-color: #5b82c2;
     color: #ffffff;
     border: none;
@@ -224,7 +237,13 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.btn-iniciar:hover {
+.btn-enviar-soporte {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-iniciar:hover,
+.btn-enviar-soporte:hover {
     background-color: #4a72b2;
 }
 
@@ -237,6 +256,17 @@ body {
 .enlace-olvido:hover {
     text-decoration: underline;
     color: #ffffff;
+}
+
+.mensaje-exito {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: rgba(91, 130, 194, 0.2);
+    border: 1px solid #5b82c2;
+    color: #ffffff;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 600;
 }
 
 .lista-servicios-estilizada {
