@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitación Matrimonial 200 - Miraflores Pacific Hotel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .galeria-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #3d5880;
+        }
+
+        .boton-volver {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #8da9cb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .boton-volver:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-principal">
+        <div class="logo-contenedor">
+            <img src="img/logo.jpg" alt="Logo de Miraflores Pacific Hotel" class="logo-img">
+            <h1 class="hotel-titulo">Miraflores Pacific Hotel</h1>
+        </div>
+        <nav class="navegacion-principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="libro-reclamaciones.html">Libro de reclamaciones</a></li>
+                <li><a href="login.html" class="boton-login-nav">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+        <a href="index.html" class="boton-volver">&#8592; Volver al Inicio</a>
+
+        <section class="tarjeta-oscura">
+            <h2 class="titulo-seccion">Habitación Matrimonial 200</h2>
+            <p class="descripcion-ubicacion">Elegante y espaciosa habitación matrimonial equipada con cama King, baño privado con agua caliente las 24 horas, Smart TV y escritorio de trabajo.</p>
+            
+            <div class="galeria-grid">
+                <img src="img/habitacionMatrimonial200 (1).jpeg" alt="Habitación Matrimonial 200 - Cama y entorno">
+                <img src="img/habitacionMatrimonial200 (2).jpeg" alt="Habitación Matrimonial 200 - Perspectiva adicional">
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="info-footer">
+            <p>&copy; 2026 Miraflores Pacific Hotel. Todos los derechos reservados.</p>
+            <p>Miraflores, Lima - Perú</p>
+        </div>
+    </footer>
+
+</body>
+</html>
