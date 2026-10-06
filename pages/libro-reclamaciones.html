@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Miraflores Pacific Hotel. Conoce nuestras habitaciones, servicios y ubicación en Miraflores, Lima.">
+    <meta name="theme-color" content="#254b72">
+    <title>
+      Libro de reclamaciones | Miraflores Pacific Hotel
+    </title>
+    <link rel="icon" href="../assets/images/logo.jpg">
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">
+      Saltar al contenido
+    </a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html" aria-label="Miraflores Pacific Hotel, inicio">
+          <img src="../assets/images/logo.jpg" alt="Miraflores Pacific Hotel" width="708" height="708">
+          <span>
+            MIRAFLORES PACIFIC
+            <small>
+              HOTEL · LIMA, PERÚ
+            </small>
+          </span>
+        </a>
+        <nav aria-label="Navegación principal">
+          <a href="../index.html" >
+            Inicio
+          </a>
+          <a href="../index.html#habitaciones">
+            Habitaciones
+          </a>
+          <a href="../pages/contacto.html" >
+            Contacto
+          </a>
+          <a class="nav-button" href="../pages/contacto.html#reservas">
+            Consultar disponibilidad
+            <span aria-hidden="true">
+              ↗
+            </span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="contenido">
+      <section class="container section form-page">
+        <p class="eyebrow">
+          ATENCIÓN AL HUÉSPED
+        </p>
+        <h1>
+          Libro de reclamaciones
+        </h1>
+        <p class="lead">
+          Queremos escuchar tu experiencia.
+        </p>
+        <div class="notice">
+          <strong>
+            Presenta tu reclamación en recepción.
+          </strong>
+          <p>
+            Este formulario es una referencia y no envía ni registra información. Para dejar constancia de tu reclamo o queja, solicita el Libro de Reclamaciones al personal del hotel.
+          </p>
+        </div>
+        <div class="panel">
+          <p>
+            <strong>
+              Reclamo:
+            </strong>
+            disconformidad relacionada con los productos o servicios.
+          </p>
+          <p>
+            <strong>
+              Queja:
+            </strong>
+            malestar o descontento respecto a la atención al público.
+          </p>
+          <form class="lr-form" id="formLibroReclamaciones" >
+            <fieldset class="lr-fieldset">
+              <legend>
+                1. Fecha
+              </legend>
+              <div class="lr-grid">
+                <div class="lr-field">
+                  <label for="fecha">
+                    Fecha de reclamo
+                  </label>
+                  <input type="date" id="fecha" name="fecha" required>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="lr-fieldset">
+              <legend>
+                2. Identificación del consumidor reclamante
+              </legend>
+              <div class="lr-grid">
+                <div class="lr-field">
+                  <label for="nombres">
+                    Nombres y apellidos
+                  </label>
+                  <input type="text" id="nombres" name="nombres" required>
+                </div>
+                <div class="lr-field">
+                  <label for="tipoDocumento">
+                    Tipo de documento
+                  </label>
+                  <select id="tipoDocumento" name="tipoDocumento" required>
+                    <option value="">
+                      Seleccione
+                    </option>
+                    <option value="DNI">
+                      DNI
+                    </option>
+                    <option value="CE">
+                      Carné de Extranjería
+                    </option>
+                    <option value="Pasaporte">
+                      Pasaporte
+                    </option>
+                  </select>
+                </div>
+                <div class="lr-field">
+                  <label for="numeroDocumento">
+                    Número de documento
+                  </label>
+                  <input type="text" id="numeroDocumento" name="numeroDocumento" required>
+                </div>
+                <div class="lr-field">
+                  <label for="domicilio">
+                    Domicilio
+                  </label>
+                  <input type="text" id="domicilio" name="domicilio" required>
+                </div>
+                <div class="lr-field">
+                  <label for="telefono">
+                    Teléfono
+                  </label>
+                  <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="lr-field">
+                  <label for="email">
+                    Correo electrónico
+                  </label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="lr-fieldset">
+              <legend>
+                3. Datos del padre, madre o apoderado (si el consumidor es menor de edad)
+              </legend>
+              <div class="lr-grid">
+                <div class="lr-field">
+                  <label for="nombreApoderado">
+                    Nombres y apellidos
+                  </label>
+                  <input type="text" id="nombreApoderado" name="nombreApoderado">
+                </div>
+                <div class="lr-field">
+                  <label for="documentoApoderado">
+                    Número de documento
+                  </label>
+                  <input type="text" id="documentoApoderado" name="documentoApoderado">
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="lr-fieldset">
+              <legend>
+                4. Identificación del bien contratado
+              </legend>
+              <div class="lr-grid">
+                <div class="lr-field">
+                  <label for="servicioContratado">
+                    Servicio contratado
+                  </label>
+                  <input type="text" id="servicioContratado" name="servicioContratado" placeholder="Ej. Reserva de habitación, restaurante, spa, etc." required>
+                </div>
+                <div class="lr-field">
+                  <label for="montoReclamado">
+                    Monto reclamado (S/)
+                  </label>
+                  <input type="number" step="0.01" min="0" id="montoReclamado" name="montoReclamado">
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="lr-fieldset">
+              <legend>
+                5. Detalle de la reclamación
+              </legend>
+              <div class="lr-grid">
+                <div class="lr-field lr-field-full">
+                  <label>
+                    Tipo
+                  </label>
+                  <div class="lr-radio-group">
+                    <label class="lr-radio">
+                      <input type="radio" name="tipoReclamo" value="Reclamo" required>
+                      Reclamo
+                    </label>
+                    <label class="lr-radio">
+                      <input type="radio" name="tipoReclamo" value="Queja" required>
+                      Queja
+                    </label>
+                  </div>
+                </div>
+                <div class="lr-field lr-field-full">
+                  <label for="detalle">
+                    Descripción de los hechos
+                  </label>
+                  <textarea id="detalle" name="detalle" rows="5" required>
+                  </textarea>
+                </div>
+                <div class="lr-field lr-field-full">
+                  <label for="pedido">
+                    Pedido del consumidor
+                  </label>
+                  <textarea id="pedido" name="pedido" rows="4" required>
+                  </textarea>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="lr-fieldset">
+              <legend>
+                6. Observaciones y acciones adoptadas por el proveedor (uso exclusivo del hotel)
+              </legend>
+              <div class="lr-grid">
+                <div class="lr-field lr-field-full">
+                  <label for="observaciones">
+                    Observaciones
+                  </label>
+                  <textarea readonly id="observaciones" name="observaciones" rows="4">
+                  </textarea>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="lr-fieldset">
+              <legend>
+                7. Conformidad
+              </legend>
+              <div class="lr-checkbox-group">
+                <label class="lr-checkbox">
+                  <input type="checkbox" id="declaracion" name="declaracion" required>
+                  Declaro que la información consignada es verdadera y acepto el tratamiento
+                de mis datos personales para efectos de la atención de este reclamo.
+                </label>
+              </div>
+            </fieldset>
+            <div class="lr-acciones">
+              <button type="reset" class="lr-btn lr-btn-secundario">
+                Limpiar
+              </button>
+              <button type="button" class="button" disabled>
+                Envío web no disponible
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div>
+          <p class="footer-brand">
+            Miraflores Pacific Hotel
+          </p>
+          <p>
+            Un lugar para descansar.
+            <br>
+            Una ciudad para descubrir.
+          </p>
+        </div>
+        <div>
+          <p class="eyebrow">
+            ENCUÉNTRANOS
+          </p>
+          <address>
+            Av. Grau 191, Miraflores
+            <br>
+            Lima 15074, Perú
+          </address>
+        </div>
+        <div>
+          <p class="eyebrow">
+            PLANIFICA TU VISITA
+          </p>
+          <a href="../pages/contacto.html">
+            Contacto y reservas ↗
+          </a>
+          <a href="../pages/libro-reclamaciones.html">
+            Libro de reclamaciones
+          </a>
+          <a href="../pages/login.html">
+            Acceso de huéspedes
+          </a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>
+          © 2026 Miraflores Pacific Hotel
+        </span>
+        <span>
+          Miraflores, Lima · Perú
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
