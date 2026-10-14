@@ -1,105 +1,103 @@
 @charset "UTF-8";
-:root   {
-  --ink:#172f3d;
-  --blue:#235164;
-  --gold:#d5b27a;
-  --sans:"Segoe UI",system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
-  --muted:#5c6e77;
-  --line:#dde4e2;
-  --paper:#fffefb;
-  --soft:#f4f3ed;
-  --serif:"Palatino Linotype","Book Antiqua",Palatino,Georgia,serif;
-  --radius:12px
+:root {
+  --ink:#20384f;
+  --blue:#325d89;
+  --muted:#657789;
+  --line:#dce5ec;
+  --paper:#fff;
+  --soft:#f3f6f8;
+  --serif:Georgia,'Times New Roman',serif;
+  --radius:4px
 }
-*   {
+* {
   box-sizing:border-box
 }
-html   {
+html {
   scroll-behavior:smooth;
-  scroll-padding-top:112px
+  scroll-padding-top:110px
 }
-body   {
+body {
   margin:0;
   background:var(--paper);
   color:var(--ink);
-  font-family:var(--sans);
+  font-family:Arial,Helvetica,sans-serif;
   font-size:16px;
   line-height:1.7
 }
-a   {
+a {
   color:inherit;
   text-decoration:none
 }
-a:hover   {
+a:hover {
   color:var(--blue)
 }
-img   {
+img {
   display:block;
   width:100%;
   height:auto
 }
-button,input,textarea,select   {
+button,input,textarea,select {
   font:inherit
 }
-button,a,input,textarea,select,summary   {
+button,a,input,textarea,select,summary {
   -webkit-tap-highlight-color:transparent
 }
-:focus-visible   {
+:focus-visible {
   outline:3px solid #4174a2;
   outline-offset:5px
 }
-h1,h2,h3,p   {
+h1,h2,h3,p {
   margin-top:0
 }
-h1,h2   {
+h1,h2 {
   font-family:var(--serif);
   font-weight:400;
-  letter-spacing:-.035em;
+  letter-spacing:-.04em;
   line-height:1.12
 }
-h1   {
+h1 {
   font-size:clamp(2.6rem,5.1vw,4.8rem);
   margin-bottom:26px
 }
-h2   {
+h2 {
   font-size:clamp(2rem,3.5vw,3rem);
   margin-bottom:24px
 }
-h3   {
+h3 {
   font-size:1.25rem;
   font-weight:500;
   line-height:1.3
 }
-p   {
+p {
   margin-bottom:22px
 }
-address   {
+address {
   font-style:normal
 }
-.container   {
+.container {
   width:min(1180px,calc(100% - 96px));
   margin-inline:auto
 }
-.section   {
+.section {
   padding-block:96px
 }
-.eyebrow   {
+.eyebrow {
   font-size:.68rem;
   font-weight:700;
   letter-spacing:.2em;
   color:var(--blue);
   margin-bottom:20px
 }
-.lead   {
+.lead {
   max-width:690px;
   font-size:1.13rem;
   color:var(--muted)
 }
-.muted   {
+.muted {
   color:var(--muted);
   font-size:.87rem
 }
-.skip-link   {
+.skip-link {
   position:fixed;
   top:-100px;
   left:16px;
@@ -108,10 +106,6 @@ address   {
   color:white;
   padding:10px 20px
 }
-.skip-link:focus   {
+.skip-link:focus {
   top:12px
-}
-::selection   {
-  background:#d5b27a;
-  color:#172f3d;
 }

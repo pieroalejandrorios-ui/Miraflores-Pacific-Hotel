@@ -1,292 +1,227 @@
-@media(max-width:1100px)   {
-  .container   {
-    width:calc(100% - 56px);
-  }
-  .header-inner   {
-    gap:16px;
-  }
-  nav   {
-    gap:16px;
-    font-size:.8rem;
-  }
-  .brand span   {
-    font-size:.82rem;
-  }
-  .brand img   {
-    width:54px;
-    height:54px;
-  }
-  nav .nav-button   {
-    padding:10px 12px;
-  }
-  .intro   {
-    gap:40px;
-  }
-  .room-content   {
-    padding:24px;
-  }
-  .section-heading   {
-    align-items:start;
-  }
-  .service-grid   {
-    grid-template-columns:repeat(2,minmax(0,1fr));
-  }
-  .room-heading   {
-    align-items:start;
-    flex-direction:column;
-  }
-  .location-grid   {
-    gap:40px;
-  }
-  .footer-top   {
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:40px 56px;
+@media(min-width:1450px) {
+  .hero-logo {
+    right:calc((100% - 1380px)/2)
   }
 }
-@media(max-width:850px)   {
-  html   {
-    scroll-padding-top:165px;
+@media(max-width:1100px) {
+  .container {
+    width:calc(100% - 56px)
   }
-  .header-inner   {
+  nav {
+    gap:18px
+  }
+  .brand span {
+    font-size:.85rem
+  }
+  nav .nav-button {
+    padding:10px 12px
+  }
+  .intro {
+    gap:40px
+  }
+  .room-content {
+    padding:22px
+  }
+  .section-heading {
+    align-items:start
+  }
+  .service-grid {
+    grid-template-columns:repeat(2,1fr)
+  }
+  .room-heading {
+    align-items:start;
+    flex-direction:column
+  }
+  .hero-logo {
+    right:-220px
+  }
+  .location-grid {
+    gap:40px
+  }
+}
+@media(max-width:800px) {
+  .header-inner {
     flex-wrap:wrap;
     justify-content:center;
-    padding-block:10px;
-    gap:6px;
+    padding-block:12px;
+    gap:8px
   }
-  .brand img   {
-    width:44px;
-    height:44px;
+  .brand img {
+    width:46px;
+    height:46px
   }
-  nav   {
+  nav {
     width:100%;
     justify-content:center;
     flex-wrap:wrap;
-    gap:6px 22px;
+    font-size:.75rem;
+    gap:8px 22px
   }
-  .nav-button span   {
-    display:none;
+  .nav-button span {
+    display:none
   }
-  .hero   {
-    min-height:640px;
+  .hero {
+    min-height:580px
   }
-  .hero-content   {
-    padding-block:74px;
+  .hero-content {
+    padding-block:70px
   }
-  .hero-photo   {
-    object-position:62% center;
+  .hero-logo {
+    width:640px;
+    height:640px;
+    right:-240px;
+    opacity:.42
   }
-  .hero:after   {
-    background:linear-gradient(90deg,#081720df,#08172075),linear-gradient(0deg,#08172060,transparent);
+  .hero:after {
+    background:linear-gradient(90deg,#f6f8fb 0%,#f6f8fbd9 42%,#f6f8fb50 100%)
   }
-  .intro,.location-grid,.contact-grid   {
-    grid-template-columns:1fr;
+  .intro,.location-grid,.contact-grid {
+    grid-template-columns:1fr
   }
-  .section   {
-    padding-block:72px;
+  .section {
+    padding-block:64px
   }
-  .intro-image   {
-    max-width:580px;
+  .intro-image img {
+    height:360px
   }
-  .intro-image img   {
-    height:410px;
+  .room-grid {
+    grid-template-columns:1fr
   }
-  .room-grid   {
-    grid-template-columns:1fr;
-  }
-  .room-card   {
+  .room-card {
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr 1fr
   }
-  .room-image img   {
+  .room-image img {
     height:100%;
-    min-height:290px;
+    min-height:280px
   }
-  .section-heading   {
+  .section-heading {
     flex-direction:column;
-    gap:18px;
+    gap:18px
   }
-  .gallery a:first-child img   {
-    height:380px;
+  .footer-top {
+    grid-template-columns:1fr 1fr;
+    gap:28px
   }
-  .gallery img   {
-    height:260px;
+  .footer-top>div:first-child {
+    grid-column:1/-1
   }
-  .panel,.location-card   {
-    padding:32px;
+  .gallery a:first-child img {
+    height:380px
+  }
+  .gallery img {
+    height:260px
+  }
+  .panel {
+    padding:30px
+  }
+  .location-card {
+    padding:30px
   }
 }
-@media(max-width:540px)   {
-  html   {
-    scroll-padding-top:170px;
+@media(max-width:480px) {
+  .container {
+    width:calc(100% - 36px)
   }
-  .container   {
-    width:calc(100% - 36px);
+  nav {
+    gap:6px 16px
   }
-  .header-inner   {
-    padding-block:8px;
-    gap:4px;
-  }
-  .brand img   {
-    width:38px;
-    height:38px;
-  }
-  .brand span   {
-    font-size:.8rem;
-  }
-  .brand small   {
-    font-size:.52rem;
-  }
-  nav   {
-    gap:2px 18px;
-    font-size:.8rem;
-  }
-  nav a   {
-    padding:7px 0;
-  }
-  nav .nav-button   {
+  nav .nav-button {
     width:100%;
     text-align:center;
     display:block;
-    padding:8px 12px;
+    padding:7px 12px
   }
-  .hero   {
-    min-height:620px;
+  .hero-content {
+    padding-block:54px
   }
-  .hero-content   {
-    padding-block:56px;
+  .hero h1 {
+    font-size:2.8rem
   }
-  .hero h1   {
-    font-size:clamp(2.6rem,10.3vw,3.5rem);
+  .hero-logo {
+    right:-290px;
+    opacity:.35
   }
-  .hero .eyebrow   {
-    font-size:.62rem;
-    letter-spacing:.12em;
+  .hero-description {
+    font-size:.94rem
   }
-  .hero .eyebrow:before   {
-    width:22px;
-  }
-  .hero-description   {
-    font-size:.98rem;
-  }
-  .hero-photo   {
-    object-position:66% center;
-  }
-  .actions   {
+  .actions {
     flex-direction:column;
-    align-items:stretch;
+    align-items:stretch
   }
-  .hero-location   {
-    margin-top:30px;
-    font-size:.72rem;
-    letter-spacing:.02em;
+  .hero-location {
+    margin-top:28px
   }
-  .benefit-strip .container   {
+  .benefit-strip .container {
     flex-direction:column;
-    gap:11px;
-    font-size:.8rem;
-    padding-block:20px;
+    gap:8px;
+    font-size:.75rem
   }
-  .section   {
-    padding-block:56px;
+  .intro-image img {
+    height:310px
   }
-  .intro-image img   {
-    height:320px;
+  .room-card {
+    display:block
   }
-  .intro-image   {
-    padding:0 16px 16px 0;
-  }
-  .intro-image>span   {
-    left:16px;
-    bottom:32px;
-  }
-  .room-card   {
-    display:flex;
-  }
-  .room-image img   {
+  .room-image img {
     height:250px;
-    min-height:0;
+    min-height:0
   }
-  .room-content   {
-    padding:26px;
+  .service-grid {
+    gap:20px
   }
-  .service-grid   {
-    gap:14px;
+  .service-grid h3 {
+    font-size:1.2rem
   }
-  .service-grid article   {
-    padding:20px 16px;
+  .location-section {
+    padding-block:60px
   }
-  .service-grid h3   {
-    font-size:1.23rem;
+  .footer-top {
+    grid-template-columns:1fr
   }
-  .service-grid p   {
-    font-size:.84rem;
+  .footer-top>div:first-child {
+    grid-column:auto
   }
-  .service-number   {
-    margin-bottom:16px;
-  }
-  .location-section   {
-    padding-block:60px;
-  }
-  .footer-top   {
-    grid-template-columns:1fr;
-    gap:30px;
-    padding-bottom:32px;
-  }
-  .site-footer   {
-    padding-top:44px;
-  }
-  .footer-logo   {
-    width:64px;
-    height:64px;
-  }
-  .site-footer .eyebrow   {
-    margin-bottom:16px;
-  }
-  .footer-bottom   {
+  .footer-bottom {
     flex-direction:column;
-    gap:10px;
+    gap:6px
   }
-  .gallery,.lr-grid   {
-    grid-template-columns:1fr;
+  .gallery,.lr-grid {
+    grid-template-columns:1fr
   }
-  .gallery a:first-child img,.gallery img   {
-    height:290px;
+  .gallery a:first-child img,.gallery img {
+    height:290px
   }
-  .lr-field-full   {
-    grid-column:auto;
+  .lr-field-full {
+    grid-column:auto
   }
-  .panel,.location-card   {
-    padding:24px;
+  .panel {
+    padding:22px
   }
-  fieldset   {
-    padding:18px 14px;
+  fieldset {
+    padding:18px 14px
   }
-  legend   {
-    font-size:.8rem;
+  legend {
+    font-size:.8rem
   }
-  .notice   {
-    padding:20px;
+  .notice {
+    padding:20px
   }
-  .contact-grid h2   {
-    font-size:1.9rem;
+  .contact-grid h2 {
+    font-size:1.9rem
   }
-  .room-heading   {
-    margin-top:30px;
+  .room-heading {
+    margin-top:30px
   }
-}
-@media(max-width:360px)   {
-  .service-grid   {
-    grid-template-columns:1fr;
-  }
-  nav   {
-    gap:2px 14px;
+  .service-number {
+    margin-bottom:18px
   }
 }
-@media(prefers-reduced-motion:reduce)   {
-  html   {
-    scroll-behavior:auto;
+@media(prefers-reduced-motion:reduce) {
+  html {
+    scroll-behavior:auto
   }
-  *,*:before,*:after   {
-    transition:none!important;
+  *,*:before,*:after {
+    transition:none!important
   }
 }

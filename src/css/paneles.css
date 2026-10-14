@@ -1,11 +1,11 @@
-.panel   {
+.panel {
   padding:40px;
   border:1px solid var(--line);
   border-radius:var(--radius)
 }
-.panel h2   {
+.panel h2 {
   font-size:2.1rem
 }
-.panel-tinted   {
+.panel-tinted {
   background:var(--soft)
 }

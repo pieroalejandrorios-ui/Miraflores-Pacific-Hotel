@@ -33,13 +33,7 @@ node scripts/build.cjs --check
 
 No edites directamente index.html, pages/ ni assets/css/style.css: el próximo armado los sobrescribirá. No hace falta ejecutar el armado para visitar el sitio: las salidas ya están incluidas.
 
-El orden de los módulos CSS en el manifiesto define la cascada. El armado concatena las fuentes sin transformar las reglas ni las estructuras HTML.
-
-## Diseño
-
-La portada utiliza la fotografía original aportada en assets/images/portada-hotel.webp. Los estilos combinan tonos azul profundo, marfil y dorado; los títulos usan Palatino y los textos Segoe UI, con alternativas locales según el sistema. No se descargan fuentes ni librerías de íconos.
-
-El resumen de Nosotros está en src/modules/inicio/nosotros.html, con estilos en src/css/nosotros.css. La página nosotros.html se arma a partir de src/modules/nosotros/, conserva los textos de historia, misión, visión y valores de la actualización reciente de GitHub, y usa src/css/nosotros-pagina.css. Los íconos se dibujan con máscaras SVG declaradas exclusivamente en src/css/iconos.css. La cabecera permanece visible al desplazarse con position: sticky. Los ajustes para móvil y tablet se mantienen en src/css/responsive.css.
+El orden de los módulos CSS en el manifiesto conserva la cascada original. Los archivos finales mantienen exactamente el HTML y las reglas CSS anteriores a esta reorganización.
 
 ## Funcionalidad
 

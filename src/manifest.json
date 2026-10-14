@@ -27,24 +27,18 @@
     {
       "output": "pages/login.html",
       "template": "templates/login.html"
-    },
-    {
-      "output": "nosotros.html",
-      "template": "templates/nosotros.html"
     }
   ],
   "css": {
     "output": "assets/css/style.css",
     "modules": [
       "css/base.css",
-      "css/iconos.css",
       "css/cabecera.css",
       "css/portada.css",
       "css/botones.css",
       "css/portada-ubicacion.css",
       "css/beneficios.css",
-      "css/nosotros.css",
-      "css/nosotros-pagina.css",
+      "css/presentacion.css",
       "css/enlaces.css",
       "css/habitaciones.css",
       "css/servicios.css",

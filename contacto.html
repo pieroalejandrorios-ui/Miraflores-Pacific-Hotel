@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Miraflores Pacific Hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,10 +16,13 @@
             <img src="img/logo.jpg" alt="Logo de Miraflores Pacific Hotel" class="logo-img">
             <p class="hotel-titulo">Miraflores Pacific Hotel</p>
         </div>
-        <nav class="navegacion-principal" aria-label="Navegación principal">
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPrincipal">
+            <span class="menu-toggle-barras" aria-hidden="true"></span>
+        </button>
+        <nav class="navegacion-principal" id="menuPrincipal" aria-label="Navegación principal">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
+                
                 <li><a href="habitaciones.html">Habitaciones</a></li>
                 <li><a href="contacto.html" class="activo">Contacto</a></li>
                 <li><a href="libro-reclamaciones.html">Libro de reclamaciones</a></li>
@@ -25,71 +31,142 @@
         </nav>
     </header>
 
-    <main class="contenedor-principal">
-        <section class="seccion-bienvenida">
+    <main class="pagina-completa">
+    <section class="hero " style="--hero-img: url('../img/fachada.jpeg');">
+        <div class="hero-interior">
             <h1>¿Aún necesitas ayuda?</h1>
             <p>Responde este formulario y nuestro equipo te ayudará lo antes posible.</p>
+        </div>
+    </section>
+
+        <section class="banda banda-clara">
+            <div class="banda-interior contacto-columnas">
+                <div class="tarjeta-oscura">
+                    <span class="subtitulo-seccion">Soporte técnico</span>
+                    <h2 class="titulo-seccion">Formulario de contacto</h2>
+                    <form id="contactoSoporte" method="post" action="#" class="formulario-soporte">
+                                    <div class="grupo-campo">
+                                        <label for="nombre">Nombre completo *</label>
+                                        <input type="text" id="nombre" name="nombre" required>
+                                    </div>
+
+                                    <div class="grupo-campo">
+                                        <label for="email">Correo *</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+
+                                    <div class="grupo-campo">
+                                        <label for="motivo">Motivo de la consulta *</label>
+                                        <select id="motivo" name="motivo" required>
+                                            <option value="" selected disabled>Selecciona una opción</option>
+                                            <option value="reserva">Problema con mi reserva</option>
+                                            <option value="checkin">Check-in / Check-out</option>
+                                            <option value="facturacion">Facturación / Comprobantes</option>
+                                            <option value="habitacion">Habitación / Servicios</option>
+                                            <option value="otros">Otros</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="grupo-campo">
+                                        <label for="reserva">N° de reserva (opcional)</label>
+                                        <input type="text" id="reserva" name="reserva" placeholder="Ej: MIP-12345">
+                                    </div>
+
+                                    <div class="grupo-campo">
+                                        <label for="mensaje">Descripción *</label>
+                                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn-enviar-soporte">Enviar solicitud</button>
+
+                                    <p id="resultado" class="mensaje-exito oculto">Gracias. Tu mensaje fue enviado.</p>
+                                </form>
+                </div>
+
+                <div class="tarjeta-oscura">
+                    <span class="subtitulo-seccion">Atención inmediata</span>
+                    <h2 class="titulo-seccion">Contacto directo</h2>
+                    <ul class="lista-servicios-estilizada">
+                                    <li><strong>Teléfono:</strong>&nbsp;+00 000 000 000</li>
+                                    <li><strong>Correo:</strong>&nbsp;soporte@miraflorespacifichotel.com</li>
+                                </ul>
+                </div>
+            </div>
         </section>
 
-        <section class="tarjeta-oscura">
-            <span class="subtitulo-seccion">Soporte técnico</span>
-            <h2 class="titulo-seccion">Formulario de contacto</h2>
-
-            <form id="contactoSoporte" method="post" action="#" class="formulario-soporte">
-                <div class="grupo-campo">
-                    <label for="nombre">Nombre completo *</label>
-                    <input type="text" id="nombre" name="nombre" required>
+        <section class="banda banda-oscura">
+            <div class="banda-interior">
+                <div class="encabezado-banda">
+                    <span class="subtitulo-seccion">Nuestra ubicación</span>
+                    <h2 class="titulo-seccion">Visítanos en Miraflores</h2>
+                    <p>Av. Grau 191, Miraflores, Lima 15074, Perú</p>
                 </div>
+                <div class="ubicacion-columnas">
+                    <div class="mapa-contenedor">
+                        <iframe
+                                            title="Mapa de ubicación de Miraflores Pacific Hotel"
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.7061730777593!2d-77.0315!3d-12.1211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDA3JzE2LjAiUyA3N8KwMDEnNTMuNCJX!5e0!3m2!1ses!2spe!4v1600000000000!5m2!1ses!2spe"
+                                            allowfullscreen
+                                            loading="lazy">
+                                        </iframe>
+                    </div>
+                    <div class="tarjeta-oscura">
+                        <span class="subtitulo-seccion">Cómo llegar</span>
+                        <div class="info-llegar">
+                                        <p class="hotel-nombre"><strong>Miraflores Pacific Hotel</strong></p>
+                                        <p class="hotel-direccion">Av. Grau 191, Miraflores, Lima 15074, Perú</p>
 
-                <div class="grupo-campo">
-                    <label for="email">Correo *</label>
-                    <input type="email" id="email" name="email" required>
+                                        <hr class="divisor">
+
+                                        <div class="metodo-transporte">
+                                            <p class="titulo-transporte"><strong>Aeropuerto Internacional Jorge Chávez</strong></p>
+                                            <p>Ubicado a 18 km aprox. El trayecto toma entre 35 a 50 minutos en taxi o transporte privado a través de la Circunvalación del Callao y Av. Costa Verde (Bajada Balta).</p>
+                                        </div>
+
+                                        <hr class="divisor">
+
+                                        <div class="metodo-transporte">
+                                            <p class="titulo-transporte"><strong>Otros medios de transporte</strong></p>
+                                            <p>A solo 2 cuadras del Corredor Azul (Av. José Larco / Av. José Pardo - Paradero Berlín) y a 10 minutos a pie de la Estación Benavides o Ricardo Palma del Metropolitano.</p>
+                                        </div>
+                                    </div>
+                    </div>
                 </div>
-
-                <div class="grupo-campo">
-                    <label for="motivo">Motivo de la consulta *</label>
-                    <select id="motivo" name="motivo" required>
-                        <option value="" selected disabled>Selecciona una opción</option>
-                        <option value="reserva">Problema con mi reserva</option>
-                        <option value="checkin">Check-in / Check-out</option>
-                        <option value="facturacion">Facturación / Comprobantes</option>
-                        <option value="habitacion">Habitación / Servicios</option>
-                        <option value="otros">Otros</option>
-                    </select>
-                </div>
-
-                <div class="grupo-campo">
-                    <label for="reserva">N° de reserva (opcional)</label>
-                    <input type="text" id="reserva" name="reserva" placeholder="Ej: MIP-12345">
-                </div>
-
-                <div class="grupo-campo">
-                    <label for="mensaje">Descripción *</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-                </div>
-
-                <button type="submit" class="btn-enviar-soporte">Enviar solicitud</button>
-
-                <p id="resultado" class="mensaje-exito oculto">Gracias. Tu mensaje fue enviado.</p>
-            </form>
-        </section>
-
-        <section class="tarjeta-oscura">
-            <span class="subtitulo-seccion">Atención inmediata</span>
-            <h2 class="titulo-seccion">Contacto directo</h2>
-            <ul class="lista-servicios-estilizada">
-                <li><strong>Teléfono:</strong>&nbsp;+00 000 000 000</li>
-                <li><strong>Correo:</strong>&nbsp;soporte@miraflorespacifichotel.com</li>
-            </ul>
+            </div>
         </section>
     </main>
 
     <footer class="pie-pagina">
-        <div class="info-footer">
+        <div class="footer-columnas">
+            <div class="footer-col">
+                <p class="footer-titulo">Miraflores Pacific Hotel</p>
+                <p>Descanso, confort y excelente servicio en el corazón de Miraflores.</p>
+                <p>Av. Grau 191, Miraflores, Lima - Perú</p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-titulo">Enlaces</p>
+                <ul>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="habitaciones.html">Habitaciones</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="libro-reclamaciones.html">Libro de reclamaciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <p class="footer-titulo">Contáctanos</p>
+                <p><a class="footer-wsp" href="https://wa.me/51934136905?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20una%20reserva" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span>WhatsApp: 934 136 905</span></a></p>
+                <p>Recepción 24 horas</p>
+            </div>
+        </div>
+        <div class="footer-copy">
             <p>&copy; 2026 Miraflores Pacific Hotel. Todos los derechos reservados.</p>
-            <p>Av. Grau 191, Miraflores, Lima - Perú</p>
         </div>
     </footer>
+
+    <a class="whatsapp-flotante" href="https://wa.me/51934136905?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20una%20reserva" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp al 934 136 905">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        <span class="wsp-numero">934 136 905</span>
+    </a>
 
     <script src="js/main.js"></script>
 </body>

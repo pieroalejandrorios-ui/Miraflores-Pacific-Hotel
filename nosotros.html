@@ -1,116 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Miraflores Pacific Hotel. Conoce nuestras habitaciones, servicios y ubicación en Miraflores, Lima.">
-    <meta name="theme-color" content="#254b72">
-    <title>
-      Nosotros | Miraflores Pacific Hotel
-    </title>
-    <link rel="icon" href="assets/images/logo.jpg">
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-    <a class="skip-link" href="#contenido">
-      Saltar al contenido
-    </a>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="Miraflores Pacific Hotel, inicio">
-          <img src="assets/images/logo.jpg" alt="Miraflores Pacific Hotel" width="708" height="708">
-          <span>
-            MIRAFLORES PACIFIC
-            <small>
-              HOTEL · LIMA, PERÚ
-            </small>
-          </span>
-        </a>
-        <nav aria-label="Navegación principal">
-          <a href="index.html">
-            Inicio
-          </a>
-          <a href="nosotros.html" aria-current="page">Nosotros</a>
-          <a href="index.html#habitaciones">
-            Habitaciones
-          </a>
-          <a href="pages/contacto.html" >
-            Contacto
-          </a>
-          <a class="nav-button" href="pages/contacto.html#reservas">
-            Consultar disponibilidad
-            <span aria-hidden="true">
-              ↗
-            </span>
-          </a>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Miraflores Pacific Hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header-principal">
+        <div class="logo-contenedor">
+            <img src="img/logo.jpg" alt="Logo de Miraflores Pacific Hotel" class="logo-img">
+            <p class="hotel-titulo">Miraflores Pacific Hotel</p>
+        </div>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPrincipal">
+            <span class="menu-toggle-barras" aria-hidden="true"></span>
+        </button>
+        <nav class="navegacion-principal" id="menuPrincipal" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html" class="activo">Nosotros</a></li>
+                <li><a href="habitaciones.html">Habitaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="libro-reclamaciones.html">Libro de reclamaciones</a></li>
+                <li><a href="login.html" class="boton-login-nav">Iniciar sesión</a></li>
+            </ul>
         </nav>
-      </div>
     </header>
-    <main class="contenedor-principal" id="contenido">
-        <section class="seccion-bienvenida">
+
+    <main class="pagina-completa">
+    <section class="hero " style="--hero-img: url('../img/fachada.jpeg');">
+        <div class="hero-interior">
             <h1>Sobre nosotros</h1>
             <p>Conoce los pilares que definen nuestra identidad y el compromiso con nuestros huéspedes.</p>
-        </section>
+        </div>
+    </section>
 
-        <section class="nosotros-grid">
-            <article class="tarjeta-oscura area-historia">
-                <span class="subtitulo-seccion">Quiénes somos</span>
-                <h2 class="titulo-seccion">Nuestra historia</h2>
-                <p>Fundado en el corazón de Miraflores, nuestro hotel nació con la misión de brindar una experiencia de hospedaje de primer nivel que combina modernidad y tradición.</p>
-            </article>
+        <section class="banda banda-clara">
+            <div class="banda-interior">
+                <div class="nosotros-grid">
+                            <article class="tarjeta-oscura area-historia">
+                                <span class="subtitulo-seccion">Quiénes somos</span>
+                                <h2 class="titulo-seccion">Nuestra historia</h2>
+                                <p>Fundado en el corazón de Miraflores, nuestro hotel nació con la misión de brindar una experiencia de hospedaje de primer nivel que combina modernidad y tradición.</p>
+                            </article>
 
-            <article class="tarjeta-oscura area-mision">
-                <span class="subtitulo-seccion">Lo que hacemos</span>
-                <h2 class="titulo-seccion">Nuestra misión</h2>
-                <p>Ofrecer servicios de alojamiento excepcionales, garantizando estancias cómodas, seguras y memorables para turistas y profesionales.</p>
-            </article>
+                            <article class="tarjeta-oscura area-mision">
+                                <span class="subtitulo-seccion">Lo que hacemos</span>
+                                <h2 class="titulo-seccion">Nuestra misión</h2>
+                                <p>Ofrecer servicios de alojamiento excepcionales, garantizando estancias cómodas, seguras y memorables para turistas y profesionales.</p>
+                            </article>
 
-            <article class="tarjeta-oscura area-vision">
-                <span class="subtitulo-seccion">Hacia dónde vamos</span>
-                <h2 class="titulo-seccion">Nuestra visión</h2>
-                <p>Consolidarnos como el hotel referente en Lima, reconocido por la excelencia en el servicio al cliente y la mejora continua de nuestras instalaciones.</p>
-            </article>
+                            <article class="tarjeta-oscura area-vision">
+                                <span class="subtitulo-seccion">Hacia dónde vamos</span>
+                                <h2 class="titulo-seccion">Nuestra visión</h2>
+                                <p>Consolidarnos como el hotel referente en Lima, reconocido por la excelencia en el servicio al cliente y la mejora continua de nuestras instalaciones.</p>
+                            </article>
 
-            <article class="tarjeta-oscura area-valores">
-                <span class="subtitulo-seccion">Cómo lo hacemos</span>
-                <h2 class="titulo-seccion">Nuestros valores</h2>
-                <p>Compromiso, honestidad, hospitalidad, trabajo en equipo y orientación absoluta hacia la satisfacción total de cada huésped.</p>
-            </article>
+                            <article class="tarjeta-oscura area-valores">
+                                <span class="subtitulo-seccion">Cómo lo hacemos</span>
+                                <h2 class="titulo-seccion">Nuestros valores</h2>
+                                <p>Compromiso, honestidad, hospitalidad, trabajo en equipo y orientación absoluta hacia la satisfacción total de cada huésped.</p>
+                            </article>
+                        </div>
+            </div>
         </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-top">
-        <div>
-          <img class="footer-logo" src="assets/images/logo.jpg" alt="Miraflores Pacific Hotel" width="708" height="708" loading="lazy">
-          <p class="footer-brand">Miraflores Pacific Hotel</p>
-          <p class="footer-description">Descanso, confort y hospitalidad en Miraflores. Un lugar para hacer una pausa y disfrutar de Lima a tu ritmo.</p>
+    <footer class="pie-pagina">
+        <div class="footer-columnas">
+            <div class="footer-col">
+                <p class="footer-titulo">Miraflores Pacific Hotel</p>
+                <p>Descanso, confort y excelente servicio en el corazón de Miraflores.</p>
+                <p>Av. Grau 191, Miraflores, Lima - Perú</p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-titulo">Enlaces</p>
+                <ul>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="habitaciones.html">Habitaciones</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="libro-reclamaciones.html">Libro de reclamaciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <p class="footer-titulo">Contáctanos</p>
+                <p><a class="footer-wsp" href="https://wa.me/51934136905?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20una%20reserva" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span>WhatsApp: 934 136 905</span></a></p>
+                <p>Recepción 24 horas</p>
+            </div>
         </div>
-        <div>
-          <p class="eyebrow">EXPLORA EL HOTEL</p>
-          <a href="index.html">Inicio</a>
-          <a href="nosotros.html">Nosotros</a>
-          <a href="index.html#habitaciones">Habitaciones</a>
-          <a href="index.html#ubicacion">Ubicación</a>
+        <div class="footer-copy">
+            <p>&copy; 2026 Miraflores Pacific Hotel. Todos los derechos reservados.</p>
         </div>
-        <div>
-          <p class="eyebrow">TE ESPERAMOS</p>
-          <address>Av. Grau 191, Miraflores<br>Lima 15074, Perú</address>
-          <p class="footer-note">Recepción las 24 horas.<br>Consulta por estacionamiento y asistencia de traslado.</p>
-          <a href="https://www.google.com/maps/search/?api=1&amp;query=Miraflores+Pacific+Hotel+Av.+Grau+191+Lima" target="_blank" rel="noopener noreferrer">Cómo llegar ↗</a>
-        </div>
-        <div>
-          <p class="eyebrow">CONTACTO Y RESERVAS</p>
-          <a class="footer-contact" href="mailto:soporte@miraflorespacifichotel.com">soporte@miraflorespacifichotel.com</a>
-          <p class="footer-note">Cuéntanos tus fechas y el número de huéspedes. Nuestro equipo te ayudará a planificar tu visita.</p>
-          <a class="footer-booking" href="pages/contacto.html#reservas">Consultar disponibilidad ↗</a>
-        </div>
-      </div>
-      <div class="container footer-bottom">
-        <span>© 2026 Miraflores Pacific Hotel · Todos los derechos reservados.</span>
-        <a href="pages/libro-reclamaciones.html">Libro de reclamaciones</a>
-        <a href="pages/login.html">Acceso de huéspedes</a>
-      </div>
     </footer>
-  </body>
+
+    <a class="whatsapp-flotante" href="https://wa.me/51934136905?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20una%20reserva" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp al 934 136 905">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        <span class="wsp-numero">934 136 905</span>
+    </a>
+    <script src="js/main.js"></script>
+</body>
 </html>

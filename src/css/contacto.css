@@ -1,27 +1,27 @@
-.email-address   {
+.email-address {
   font-size:.85rem;
   overflow-wrap:anywhere;
   margin-block:22px
 }
-.email-address a   {
+.email-address a {
   text-decoration:underline
 }
-.faq   {
+.faq {
   max-width:800px;
   margin-top:75px
 }
-details   {
+details {
   border-bottom:1px solid var(--line);
   padding-block:20px
 }
-summary   {
+summary {
   cursor:pointer;
   font-weight:600
 }
-details p   {
+details p {
   color:var(--muted);
   margin:16px 0 0
 }
-details a   {
+details a {
   text-decoration:underline
 }

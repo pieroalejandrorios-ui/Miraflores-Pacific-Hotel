@@ -1,84 +1,49 @@
-.hero   {
+.hero {
   position:relative;
   isolation:isolate;
   overflow:hidden;
-  background:var(--ink);
-  min-height:clamp(620px,78svh,820px);
+  background:#f6f8fb;
+  min-height:620px;
   display:flex;
-  align-items:center;
-  color:#fff;
+  align-items:center
 }
-.hero-photo   {
+.hero-logo {
   position:absolute;
-  inset:0;
   z-index:-2;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  object-position:center 56%;
+  width:760px;
+  height:760px;
+  object-fit:contain;
+  right:-80px;
+  top:50%;
+  transform:translateY(-50%);
+  mix-blend-mode:multiply;
+  opacity:.7
 }
-.hero:after   {
+.hero:after {
   content:'';
   position:absolute;
   inset:0;
   z-index:-1;
-  background:linear-gradient(90deg,rgba(8,23,32,.91) 0%,rgba(8,23,32,.72) 43%,rgba(8,23,32,.26) 100%),linear-gradient(0deg,rgba(8,23,32,.32),transparent 45%);
+  background:linear-gradient(90deg,#f6f8fb 0%,#f6f8fbf5 32%,#f6f8fb85 55%,transparent 75%)
 }
-.hero-content   {
-  padding-block:88px;
+.hero-content {
+  padding-block:85px
 }
-.hero .eyebrow   {
-  color:#f0d3a7;
-  display:flex;
-  align-items:center;
-  gap:14px;
-  letter-spacing:.19em;
+.hero h1 {
+  max-width:680px
 }
-.hero .eyebrow:before   {
-  content:'';
-  width:36px;
-  height:1px;
-  background:var(--gold);
-}
-.hero h1   {
-  max-width:760px;
-  font-size:clamp(3rem,5.7vw,5.4rem);
-  line-height:1.1;
-  text-shadow:0 3px 20px #0002;
-}
-.hero h1 em   {
+.hero h1 em {
   font-weight:400;
-  color:#efd2a4;
+  color:var(--blue)
 }
-.hero-description   {
-  max-width:495px;
-  color:#e2e7e8;
-  font-size:1.08rem;
-  line-height:1.85;
+.hero-description {
+  max-width:445px;
+  color:var(--muted);
+  font-size:1.03rem
 }
-.actions   {
+.actions {
   display:flex;
   flex-wrap:wrap;
-  gap:14px;
-  margin-top:34px;
-}
-.hero .button   {
-  background:#e4c696;
-  border-color:#e4c696;
-  color:#172f3d;
-}
-.hero .button:hover   {
-  background:#f0d6af;
-  border-color:#f0d6af;
-}
-.hero .button-outline   {
-  background:#ffffff08;
-  color:white;
-  border-color:#ffffff85;
-  backdrop-filter:blur(4px);
-}
-.hero .button-outline:hover   {
-  background:#ffffff1f;
-  color:white;
-  border-color:white;
+  gap:12px;
+  margin-top:34px
 }

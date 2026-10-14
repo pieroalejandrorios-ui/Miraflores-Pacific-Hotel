@@ -1,0 +1,26 @@
+.intro {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:85px;
+  align-items:center
+}
+.intro-image {
+  position:relative
+}
+.intro-image img {
+  height:425px;
+  object-fit:cover;
+  border-radius:var(--radius)
+}
+.intro-image span {
+  position:absolute;
+  bottom:24px;
+  left:24px;
+  background:#fff;
+  padding:10px 18px;
+  font-size:.64rem;
+  letter-spacing:.17em
+}
+.intro p:not(.eyebrow) {
+  color:var(--muted)
+}

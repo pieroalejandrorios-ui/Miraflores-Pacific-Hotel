@@ -1,4 +1,4 @@
-.contact-grid   {
+.contact-grid {
   display:grid;
   grid-template-columns:1.25fr 1fr;
   gap:28px;

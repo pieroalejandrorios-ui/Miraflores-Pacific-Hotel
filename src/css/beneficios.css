@@ -1,23 +1,17 @@
-.benefit-strip   {
+.benefit-strip {
   background:var(--ink);
-  color:#e9eeed;
-  border-top:1px solid #ffffff20;
+  color:#fff
 }
-.benefit-strip .container   {
+.benefit-strip .container {
   display:flex;
-  justify-content:space-between;
+  justify-content:space-around;
   gap:18px;
-  padding-block:22px;
-  font-size:.85rem;
-  letter-spacing:.03em;
+  padding-block:20px;
+  font-size:.76rem;
+  letter-spacing:.04em
 }
-.benefit-strip span   {
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
-.benefit-strip span:before   {
-  content:'✦';
-  color:var(--gold);
-  font-size:.9rem;
+.benefit-strip span:before {
+  content:'✧';
+  margin-right:14px;
+  color:#a5bed5
 }

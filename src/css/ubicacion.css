@@ -1,26 +1,22 @@
-.location-section   {
-  position:relative;
-  background:#e9efed;
-  padding-block:90px;
+.location-section {
+  background:#eaf0f5;
+  padding-block:80px
 }
-.location-grid   {
+.location-grid {
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:90px;
-  align-items:center;
+  align-items:center
 }
-.location-card   {
-  border:1px solid #d5dfd9;
-  border-radius:var(--radius);
-  padding:46px;
-  background:#fffefbd9;
-  box-shadow:0 14px 35px #172f3d08;
+.location-card {
+  border:1px solid #cbd8e3;
+  padding:48px;
+  background:#ffffff80
 }
-.location-card h3   {
+.location-card h3 {
   font-family:var(--serif);
-  font-size:2.1rem;
-  line-height:1.2;
+  font-size:2rem
 }
-.location-card p:not(.eyebrow)   {
-  color:var(--muted);
+.location-card p:not(.eyebrow) {
+  color:var(--muted)
 }

@@ -1,4 +1,4 @@
-.text-link   {
+.text-link {
   display:inline-block;
   border-bottom:1px solid #a1b5c6;
   padding-bottom:5px;
@@ -6,6 +6,6 @@
   font-size:.85rem;
   font-weight:600
 }
-.text-link span   {
+.text-link span {
   margin-left:18px
 }
