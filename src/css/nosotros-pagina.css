@@ -1,0 +1,87 @@
+.contenedor-principal  {
+  width:min(1180px,calc(100% - 96px));
+  margin-inline:auto;
+  padding-block:80px;
+}
+.seccion-bienvenida  {
+  max-width:740px;
+  margin-bottom:44px;
+}
+.seccion-bienvenida p  {
+  font-size:1.1rem;
+  color:var(--muted);
+}
+.nosotros-grid  {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:26px;
+}
+.nosotros-grid article  {
+  position:relative;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:36px;
+  background:var(--paper);
+  box-shadow:0 10px 30px #172f3d08;
+}
+.nosotros-grid article:before  {
+  content:'';
+  display:block;
+  width:30px;
+  height:30px;
+  margin-bottom:24px;
+  background:var(--blue);
+  mask:var(--icon) center/contain no-repeat;
+}
+.area-historia  {
+  --icon:var(--icon-book);
+}
+.area-mision  {
+  --icon:var(--icon-target);
+}
+.area-vision  {
+  --icon:var(--icon-compass);
+}
+.area-valores  {
+  --icon:var(--icon-heart);
+}
+.nosotros-grid .subtitulo-seccion  {
+  font-size:.67rem;
+  color:var(--blue);
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+}
+.nosotros-grid h2  {
+  font-size:2rem;
+  margin-top:16px;
+}
+.nosotros-grid p  {
+  color:var(--muted);
+  margin-bottom:0;
+}
+.nosotros-grid .area-mision  {
+  background:#f4f3ed;
+}
+.nosotros-grid .area-valores  {
+  background:#edf3f0;
+}
+@media(max-width:850px)  {
+  .contenedor-principal  {
+    width:calc(100% - 56px);
+    padding-block:60px;
+  }
+}
+@media(max-width:540px)  {
+  .contenedor-principal  {
+    width:calc(100% - 36px);
+    padding-block:48px;
+  }
+  .nosotros-grid  {
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+  .nosotros-grid article  {
+    padding:26px;
+  }
+}

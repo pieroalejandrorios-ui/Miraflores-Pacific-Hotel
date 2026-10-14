@@ -1,0 +1,62 @@
+{
+  "pages": [
+    {
+      "output": "index.html",
+      "template": "templates/inicio.html"
+    },
+    {
+      "output": "pages/contacto.html",
+      "template": "templates/contacto.html"
+    },
+    {
+      "output": "pages/habitacion-cuadruple-280.html",
+      "template": "templates/habitacion-cuadruple-280.html"
+    },
+    {
+      "output": "pages/habitacion-matrimonial-170.html",
+      "template": "templates/habitacion-matrimonial-170.html"
+    },
+    {
+      "output": "pages/habitacion-matrimonial-200.html",
+      "template": "templates/habitacion-matrimonial-200.html"
+    },
+    {
+      "output": "pages/libro-reclamaciones.html",
+      "template": "templates/libro-reclamaciones.html"
+    },
+    {
+      "output": "pages/login.html",
+      "template": "templates/login.html"
+    },
+    {
+      "output": "nosotros.html",
+      "template": "templates/nosotros.html"
+    }
+  ],
+  "css": {
+    "output": "assets/css/style.css",
+    "modules": [
+      "css/base.css",
+      "css/iconos.css",
+      "css/cabecera.css",
+      "css/portada.css",
+      "css/botones.css",
+      "css/portada-ubicacion.css",
+      "css/beneficios.css",
+      "css/nosotros.css",
+      "css/nosotros-pagina.css",
+      "css/enlaces.css",
+      "css/habitaciones.css",
+      "css/servicios.css",
+      "css/ubicacion.css",
+      "css/pie-pagina.css",
+      "css/detalle-habitacion.css",
+      "css/contacto-distribucion.css",
+      "css/paneles.css",
+      "css/contacto.css",
+      "css/reclamaciones.css",
+      "css/acceso.css",
+      "css/responsive.css"
+    ]
+  }
+}

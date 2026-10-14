@@ -1,0 +1,16 @@
+.hero-location   {
+  display:flex;
+  align-items:center;
+  gap:9px;
+  font-size:.8rem;
+  letter-spacing:.05em;
+  margin:42px 0 0;
+  color:#e2e7e8;
+}
+.hero-location:before   {
+  content:'';
+  width:18px;
+  height:18px;
+  background:#e4c696;
+  mask:var(--icon-location) center/contain no-repeat;
+}

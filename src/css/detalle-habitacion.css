@@ -1,0 +1,44 @@
+.room-heading   {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:32px;
+  margin-block:45px
+}
+.room-heading h1   {
+  margin-bottom:22px
+}
+.room-heading .lead   {
+  max-width:700px
+}
+.room-heading .button   {
+  flex-shrink:0
+}
+.gallery   {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px
+}
+.gallery a:first-child   {
+  grid-column:1/-1
+}
+.gallery img   {
+  height:340px;
+  object-fit:cover;
+  border-radius:var(--radius)
+}
+.gallery a:first-child img   {
+  height:520px
+}
+.room-amenities   {
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-block:30px
+}
+.room-amenities span   {
+  padding:10px 20px;
+  background:var(--soft);
+  border:1px solid var(--line);
+  font-size:.85rem
+}

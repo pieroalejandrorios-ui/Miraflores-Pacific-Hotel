@@ -1,0 +1,23 @@
+.benefit-strip   {
+  background:var(--ink);
+  color:#e9eeed;
+  border-top:1px solid #ffffff20;
+}
+.benefit-strip .container   {
+  display:flex;
+  justify-content:space-between;
+  gap:18px;
+  padding-block:22px;
+  font-size:.85rem;
+  letter-spacing:.03em;
+}
+.benefit-strip span   {
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.benefit-strip span:before   {
+  content:'✦';
+  color:var(--gold);
+  font-size:.9rem;
+}

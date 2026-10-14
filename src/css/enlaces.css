@@ -1,0 +1,11 @@
+.text-link   {
+  display:inline-block;
+  border-bottom:1px solid #a1b5c6;
+  padding-bottom:5px;
+  color:var(--blue);
+  font-size:.85rem;
+  font-weight:600
+}
+.text-link span   {
+  margin-left:18px
+}

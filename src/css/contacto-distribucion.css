@@ -1,0 +1,7 @@
+.contact-grid   {
+  display:grid;
+  grid-template-columns:1.25fr 1fr;
+  gap:28px;
+  margin-top:45px;
+  scroll-margin-top:120px
+}
