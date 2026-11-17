@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet - Miraflores Pacific Hotel</title>
+    <meta name="description" content="Intranet del personal del Miraflores Pacific Hotel.">
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header-principal">
+        <div class="logo-contenedor">
+            <img src="img/logo.jpg" alt="Logo de Miraflores Pacific Hotel" class="logo-img">
+            <p class="hotel-titulo">Miraflores Pacific Hotel</p>
+        </div>
+        <button class="boton-menu" id="botonMenu" type="button" aria-label="Mostrar u ocultar menú" aria-expanded="false" aria-controls="navegacionPrincipal">&#9776;</button>
+        <nav class="navegacion-principal" id="navegacionPrincipal" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="habitaciones.html">Habitaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="libro-reclamaciones.html">Libro de reclamaciones</a></li>
+                <li><a href="login.html" class="boton-login-nav">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+        <section class="tarjeta-oscura seccion-intranet">
+            <span class="subtitulo-seccion">Intranet</span>
+            <h1 class="titulo-seccion">Bienvenido, administrador</h1>
+            <p>Has iniciado sesión correctamente. Desde este panel el personal del hotel gestiona la información interna.</p>
+            <ul class="lista-servicios-estilizada">
+                <li><div><strong>Reservas del día:</strong> 12 check-in y 9 check-out programados.</div></li>
+                <li><div><strong>Habitaciones disponibles:</strong> 7 de 24.</div></li>
+                <li><div><strong>Reclamos pendientes:</strong> 2 por responder en el Libro de Reclamaciones.</div></li>
+            </ul>
+            <button type="button" class="btn-cerrar-sesion" id="cerrarSesion">Cerrar sesión</button>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="info-footer">
+            <p>&copy; 2026 Miraflores Pacific Hotel. Todos los derechos reservados.</p>
+            <p>Av. Grau 191, Miraflores, Lima - Perú</p>
+        </div>
+    </footer>
+
+    <script src="js/menuResponsivo.js"></script>
+    <script src="js/intranet.js"></script>
+</body>
+</html>

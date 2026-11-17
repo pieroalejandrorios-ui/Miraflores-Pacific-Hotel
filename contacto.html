@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Miraflores Pacific Hotel</title>
+    <meta name="description" content="Contáctanos para consultas y reservas en el Miraflores Pacific Hotel. Teléfono +51 934 136 905.">
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header-principal">
+        <div class="logo-contenedor">
+            <img src="img/logo.jpg" alt="Logo de Miraflores Pacific Hotel" class="logo-img">
+            <p class="hotel-titulo">Miraflores Pacific Hotel</p>
+        </div>
+        <button class="boton-menu" id="botonMenu" type="button" aria-label="Mostrar u ocultar menú" aria-expanded="false" aria-controls="navegacionPrincipal">&#9776;</button>
+        <nav class="navegacion-principal" id="navegacionPrincipal" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="habitaciones.html">Habitaciones</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+                <li><a href="libro-reclamaciones.html">Libro de reclamaciones</a></li>
+                <li><a href="login.html" class="boton-login-nav">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pagina-completa">
+    <section class="hero " style="--hero-img: url('../img/fachada.jpeg');">
+        <div class="hero-interior">
+            <h1>¿Aún necesitas ayuda?</h1>
+            <p>Responde este formulario y nuestro equipo te ayudará lo antes posible.</p>
+        </div>
+    </section>
+
+        <section class="banda banda-clara">
+            <div class="banda-interior contacto-columnas">
+                <div class="tarjeta-oscura">
+                    <span class="subtitulo-seccion">Soporte técnico</span>
+                    <h2 class="titulo-seccion">Formulario de contacto</h2>
+                    <form id="contactoSoporte" method="post" action="#" class="formulario-soporte">
+                                    <div class="grupo-campo">
+                                        <label for="nombre">Nombre completo *</label>
+                                        <input type="text" id="nombre" name="nombre" required>
+                                    </div>
+
+                                    <div class="grupo-campo">
+                                        <label for="email">Correo *</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+
+                                    <div class="grupo-campo">
+                                        <label for="motivo">Motivo de la consulta *</label>
+                                        <select id="motivo" name="motivo" required>
+                                            <option value="" selected disabled>Selecciona una opción</option>
+                                            <option value="reserva">Problema con mi reserva</option>
+                                            <option value="checkin">Check-in / Check-out</option>
+                                            <option value="facturacion">Facturación / Comprobantes</option>
+                                            <option value="habitacion">Habitación / Servicios</option>
+                                            <option value="otros">Otros</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="grupo-campo">
+                                        <label for="reserva">N° de reserva (opcional)</label>
+                                        <input type="text" id="reserva" name="reserva" placeholder="Ej: MIP-12345">
+                                    </div>
+
+                                    <div class="grupo-campo">
+                                        <label for="mensaje">Descripción *</label>
+                                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn-enviar-soporte">Enviar solicitud</button>
+                                </form>
+                </div>
+
+                <div class="tarjeta-oscura">
+                    <span class="subtitulo-seccion">Atención inmediata</span>
+                    <h2 class="titulo-seccion">Contacto directo</h2>
+                    <ul class="lista-servicios-estilizada">
+                                    <li><strong>Teléfono:</strong>&nbsp;<a href="tel:+51934136905">+51 934 136 905</a></li>
+                                    <li><strong>Correo:</strong>&nbsp;soporte@miraflorespacifichotel.com</li>
+                                </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="banda banda-oscura">
+            <div class="banda-interior">
+                <div class="encabezado-banda">
+                    <span class="subtitulo-seccion">Nuestra ubicación</span>
+                    <h2 class="titulo-seccion">Visítanos en Miraflores</h2>
+                    <p>Av. Grau 191, Miraflores, Lima 15074, Perú</p>
+                </div>
+                <div class="ubicacion-columnas">
+                    <div class="mapa-contenedor">
+                        <iframe
+                                            title="Mapa de ubicación de Miraflores Pacific Hotel"
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.7061730777593!2d-77.0315!3d-12.1211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDA3JzE2LjAiUyA3N8KwMDEnNTMuNCJX!5e0!3m2!1ses!2spe!4v1600000000000!5m2!1ses!2spe"
+                                            allowfullscreen
+                                            loading="lazy">
+                                        </iframe>
+                    </div>
+                    <div class="tarjeta-oscura">
+                        <span class="subtitulo-seccion">Cómo llegar</span>
+                        <div class="info-llegar">
+                                        <p class="hotel-nombre"><strong>Miraflores Pacific Hotel</strong></p>
+                                        <p class="hotel-direccion">Av. Grau 191, Miraflores, Lima 15074, Perú</p>
+
+                                        <hr class="divisor">
+
+                                        <div class="metodo-transporte">
+                                            <p class="titulo-transporte"><strong>Aeropuerto Internacional Jorge Chávez</strong></p>
+                                            <p>Ubicado a 18 km aprox. El trayecto toma entre 35 a 50 minutos en taxi o transporte privado a través de la Circunvalación del Callao y Av. Costa Verde (Bajada Balta).</p>
+                                        </div>
+
+                                        <hr class="divisor">
+
+                                        <div class="metodo-transporte">
+                                            <p class="titulo-transporte"><strong>Otros medios de transporte</strong></p>
+                                            <p>A solo 2 cuadras del Corredor Azul (Av. José Larco / Av. José Pardo - Paradero Berlín) y a 10 minutos a pie de la Estación Benavides o Ricardo Palma del Metropolitano.</p>
+                                        </div>
+                                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="ventana-flotante oculto" id="ventanaFlotante" role="dialog" aria-modal="true" aria-labelledby="tituloVentana">
+        <div class="ventana-contenido">
+            <h2 id="tituloVentana">Datos enviados</h2>
+            <div id="datosEnviados"></div>
+            <button type="button" class="btn-iniciar" id="cerrarVentana">Cerrar</button>
+        </div>
+    </div>
+
+    <footer class="pie-pagina">
+        <div class="info-footer">
+            <p>&copy; 2026 Miraflores Pacific Hotel. Todos los derechos reservados.</p>
+            <p>Av. Grau 191, Miraflores, Lima - Perú</p>
+        </div>
+    </footer>
+    <script src="js/menuResponsivo.js"></script>
+    <script src="js/contacto.js"></script>
+</body>
+</html>

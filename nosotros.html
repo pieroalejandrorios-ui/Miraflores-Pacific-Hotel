@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Miraflores Pacific Hotel</title>
+    <meta name="description" content="Conoce la historia, misión, visión y valores del Miraflores Pacific Hotel.">
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header-principal">
+        <div class="logo-contenedor">
+            <img src="img/logo.jpg" alt="Logo de Miraflores Pacific Hotel" class="logo-img">
+            <p class="hotel-titulo">Miraflores Pacific Hotel</p>
+        </div>
+        <button class="boton-menu" id="botonMenu" type="button" aria-label="Mostrar u ocultar menú" aria-expanded="false" aria-controls="navegacionPrincipal">&#9776;</button>
+        <nav class="navegacion-principal" id="navegacionPrincipal" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html" class="activo">Nosotros</a></li>
+                <li><a href="habitaciones.html">Habitaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="libro-reclamaciones.html">Libro de reclamaciones</a></li>
+                <li><a href="login.html" class="boton-login-nav">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pagina-completa">
+    <section class="hero " style="--hero-img: url('../img/fachada.jpeg');">
+        <div class="hero-interior">
+            <h1>Sobre nosotros</h1>
+            <p>Conoce los pilares que definen nuestra identidad y el compromiso con nuestros huéspedes.</p>
+        </div>
+    </section>
+
+        <section class="banda banda-clara">
+            <div class="banda-interior">
+                <div class="nosotros-grid">
+                            <article class="tarjeta-oscura area-historia">
+                                <span class="subtitulo-seccion">Quiénes somos</span>
+                                <h2 class="titulo-seccion">Nuestra historia</h2>
+                                <p>Fundado en el corazón de Miraflores, nuestro hotel nació con la misión de brindar una experiencia de hospedaje de primer nivel que combina modernidad y tradición.</p>
+                            </article>
+
+                            <article class="tarjeta-oscura area-mision">
+                                <span class="subtitulo-seccion">Lo que hacemos</span>
+                                <h2 class="titulo-seccion">Nuestra misión</h2>
+                                <p>Ofrecer servicios de alojamiento excepcionales, garantizando estancias cómodas, seguras y memorables para turistas y profesionales.</p>
+                            </article>
+
+                            <article class="tarjeta-oscura area-vision">
+                                <span class="subtitulo-seccion">Hacia dónde vamos</span>
+                                <h2 class="titulo-seccion">Nuestra visión</h2>
+                                <p>Consolidarnos como el hotel referente en Lima, reconocido por la excelencia en el servicio al cliente y la mejora continua de nuestras instalaciones.</p>
+                            </article>
+
+                            <article class="tarjeta-oscura area-valores">
+                                <span class="subtitulo-seccion">Cómo lo hacemos</span>
+                                <h2 class="titulo-seccion">Nuestros valores</h2>
+                                <p>Compromiso, honestidad, hospitalidad, trabajo en equipo y orientación absoluta hacia la satisfacción total de cada huésped.</p>
+                            </article>
+                        </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="info-footer">
+            <p>&copy; 2026 Miraflores Pacific Hotel. Todos los derechos reservados.</p>
+            <p>Av. Grau 191, Miraflores, Lima - Perú</p>
+        </div>
+    </footer>
+    <script src="js/menuResponsivo.js"></script>
+</body>
+</html>

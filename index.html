@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Miraflores Pacific Hotel</title>
+    <meta name="description" content="Miraflores Pacific Hotel: hospedaje cómodo y seguro en el corazón de Miraflores, Lima. Conoce nuestras habitaciones.">
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header-principal">
+        <div class="logo-contenedor">
+            <img src="img/logo.jpg" alt="Logo de Miraflores Pacific Hotel" class="logo-img">
+            <p class="hotel-titulo">Miraflores Pacific Hotel</p>
+        </div>
+        <button class="boton-menu" id="botonMenu" type="button" aria-label="Mostrar u ocultar menú" aria-expanded="false" aria-controls="navegacionPrincipal">&#9776;</button>
+        <nav class="navegacion-principal" id="navegacionPrincipal" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="habitaciones.html">Habitaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="libro-reclamaciones.html">Libro de reclamaciones</a></li>
+                <li><a href="login.html" class="boton-login-nav">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pagina-completa">
+    <section class="hero hero-grande" style="--hero-img: url('../img/fachada.jpeg');">
+        <div class="hero-interior">
+            <h1>Bienvenidos a Miraflores Pacific Hotel</h1>
+            <p>Disfruta de una experiencia única de descanso, confort y excelente servicio en el corazón turístico y comercial de Miraflores.</p>
+            <div class="hero-botones">
+                <a href="habitaciones.html" class="btn-hero">Ver habitaciones</a>
+                <a href="contacto.html" class="btn-hero btn-hero-borde">Contáctanos</a>
+            </div>
+        </div>
+    </section>
+
+        <section class="franja-datos" aria-label="Datos del hotel">
+            <ul>
+                <li><strong>24 h</strong><span>Recepción</span></li>
+                <li><strong>Wi-Fi</strong><span>Alta velocidad</span></li>
+                <li><strong>Privado</strong><span>Estacionamiento</span></li>
+                <li><strong>Miraflores</strong><span>Av. Grau 191, Lima</span></li>
+            </ul>
+        </section>
+
+        <section class="banda banda-clara">
+            <div class="banda-interior">
+                <div class="encabezado-banda">
+                    <span class="subtitulo-seccion">Sobre nosotros</span>
+                    <h2 class="titulo-seccion">Nuestra sede principal</h2>
+                    <p>Ubicados en una zona accesible y tranquila de Miraflores. Contamos con instalaciones modernas diseñadas para garantizar la mejor estancia durante tu viaje de negocios o vacaciones.</p>
+                </div>
+                <p class="accion-banda"><a href="nosotros.html" class="btn-iniciar enlace-boton">Conoce más sobre nosotros</a></p>
+            </div>
+        </section>
+
+        <section class="banda banda-oscura">
+            <div class="banda-interior">
+                <div class="encabezado-banda">
+                    <h2 class="titulo-seccion">Nuestras habitaciones</h2>
+                    <p>Haz clic en una habitación para ver todos sus detalles e imágenes.</p>
+                </div>
+                <div class="carrusel-contenedor">
+                                <button class="btn-carrusel prev" id="btnPrev" type="button" aria-label="Anterior">&#10094;</button>
+
+                                <div class="carrusel-track-container" id="carruselTrack">
+                                    <div class="carrusel-track">
+                                        <a href="habitacion-matrimonial-200.html" class="carrusel-item">
+                                            <img src="img/habitacion-matrimonial-200-1.jpeg" alt="Habitación Matrimonial 200">
+                                            <p>Habitación Matrimonial 200</p>
+                                        </a>
+                                        <a href="habitacion-cuadruple-280.html" class="carrusel-item">
+                                            <img src="img/habitacion-cuadruple-280-1.jpeg" alt="Habitación Cuádruple 280">
+                                            <p>Habitación Cuádruple 280</p>
+                                        </a>
+                                        <a href="habitacion-matrimonial-170.html" class="carrusel-item">
+                                            <img src="img/habitacion-matrimonial-170-1.jpeg" alt="Habitación Matrimonial 170">
+                                            <p>Habitación Matrimonial 170</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <button class="btn-carrusel next" id="btnNext" type="button" aria-label="Siguiente">&#10095;</button>
+                            </div>
+            </div>
+        </section>
+
+        <section class="banda banda-blanca">
+            <div class="banda-interior">
+                <div class="tarjeta-oscura">
+                    <span class="subtitulo-seccion">Nuestros beneficios</span>
+                    <h2 class="titulo-seccion">Servicios destacados para nuestros huéspedes</h2>
+                    <ul class="lista-servicios-estilizada">
+                                    <li><div><strong>Recepción 24 horas:</strong> Atención personalizada y registro durante todo el día.</div></li>
+                                    <li><div><strong>Wi-Fi de alta velocidad:</strong> Conexión estable e ilimitada en todas las instalaciones y habitaciones.</div></li>
+                                    <li><div><strong>Estacionamiento privado:</strong> Monitoreado las 24 horas con cámaras de seguridad.</div></li>
+                                    <li><div><strong>Ubicación estratégica:</strong> Excelente cercanía a zonas turísticas, restaurantes y al Malecón de Miraflores.</div></li>
+                                    <li><div><strong>Traslado y asistencia:</strong> Servicio de transporte y guía turística bajo previa solicitud.</div></li>
+                                </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="banda banda-franja-imagen" style="--hero-img: url('../img/fachada.jpeg');">
+            <div class="banda-interior">
+                <span class="subtitulo-seccion">Síguenos en redes</span>
+                <h2 class="titulo-seccion">Nuestros canales</h2>
+                <p class="descripcion-ubicacion">Entérate de nuestras novedades, promociones y fotos exclusivas.</p>
+                <p><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="enlace-red">Instagram: @miraflorespacifichotel</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="info-footer">
+            <p>&copy; 2026 Miraflores Pacific Hotel. Todos los derechos reservados.</p>
+            <p>Av. Grau 191, Miraflores, Lima - Perú</p>
+        </div>
+    </footer>
+    <script src="js/menuResponsivo.js"></script>
+    <script src="js/carrusel.js"></script>
+</body>
+</html>
