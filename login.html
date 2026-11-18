@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -34,21 +35,28 @@
     <main class="contenedor-principal">
         <section class="tarjeta-oscura seccion-login">
             <h1 class="titulo-seccion">Iniciar sesión</h1>
+
             <form class="formulario-login" id="formularioLogin" action="#" method="post">
+
                 <div class="grupo-campo">
                     <label for="usuario">Correo electrónico</label>
-                    <input type="email" id="usuario" name="usuario" placeholder="Ingrese su correo electrónico" required
-                        oninvalid="this.setCustomValidity('Por favor, ingrese su correo.')" oninput="this.setCustomValidity('')">
+                    <input type="email" id="usuario" name="usuario"
+                        placeholder="Ingrese su correo electrónico"
+                        maxlength="100" autocomplete="email" required>
                 </div>
+
                 <div class="grupo-campo">
                     <label for="clave">Contraseña</label>
-                    <input type="password" id="clave" name="clave" placeholder="Ingrese su contraseña" required
-                        oninvalid="this.setCustomValidity('Por favor, ingrese su contraseña.')" oninput="this.setCustomValidity('')">
+                    <input type="password" id="clave" name="clave"
+                        placeholder="Ingrese su contraseña"
+                        maxlength="100" autocomplete="current-password" required>
                 </div>
+
                 <div class="acciones-login">
                     <button type="submit" class="btn-iniciar">Ingresar</button>
                     <a href="recuperar-contrasena.html" class="enlace-olvido">¿Olvidó su contraseña?</a>
                 </div>
+
                 <p class="texto-alterno">¿Aún no tienes cuenta? <a href="registro.html" class="enlace-olvido">Regístrate aquí</a></p>
             </form>
         </section>
@@ -60,6 +68,52 @@
             <p>Av. Grau 191, Miraflores, Lima - Perú</p>
         </div>
     </footer>
+
+    <script>
+        const formulario = document.getElementById('formularioLogin');
+        const usuario = document.getElementById('usuario');
+        const clave = document.getElementById('clave');
+
+        usuario.addEventListener('input', function () {
+            this.setCustomValidity('');
+
+            if (this.value.trim() === '' && this.value !== '') {
+                this.setCustomValidity('El correo no puede contener solamente espacios.');
+            } else if (this.value.includes(' ')) {
+                this.setCustomValidity('El correo electrónico no debe contener espacios.');
+            } else if (this.value && !this.validity.valid) {
+                this.setCustomValidity('Ingrese un correo electrónico válido.');
+            }
+        });
+
+        clave.addEventListener('input', function () {
+            this.setCustomValidity('');
+
+            if (this.value.trim() === '' && this.value !== '') {
+                this.setCustomValidity('La contraseña no puede contener solamente espacios.');
+            }
+        });
+
+        formulario.addEventListener('submit', function (event) {
+            usuario.setCustomValidity('');
+            clave.setCustomValidity('');
+
+            if (usuario.value.trim() === '') {
+                usuario.setCustomValidity('Por favor, ingrese su correo electrónico.');
+            } else if (usuario.value.includes(' ')) {
+                usuario.setCustomValidity('El correo electrónico no debe contener espacios.');
+            }
+
+            if (clave.value.trim() === '') {
+                clave.setCustomValidity('Por favor, ingrese su contraseña.');
+            }
+
+            if (!formulario.checkValidity()) {
+                event.preventDefault();
+                formulario.reportValidity();
+            }
+        });
+    </script>
 
     <script src="js/menuResponsivo.js"></script>
     <script src="js/login.js"></script>
